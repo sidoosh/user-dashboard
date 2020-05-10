@@ -1,0 +1,8 @@
+.headerContainer {
+  max-height: 84px;
+  display: flex;
+  justify-content: center;
+}
+.headerLogo{
+  max-width: 160px;
+}
