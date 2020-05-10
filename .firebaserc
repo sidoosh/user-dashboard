@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "user-dashboard"
+  },
+  "targets": {
+    "user-dashboard": {
+      "hosting": {
+        "userdashboard": [
+          "userdashboard"
+        ]
+      }
+    }
+  }
+}
