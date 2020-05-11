@@ -4,16 +4,6 @@ import dynamic from 'dva/dynamic';
 
 const routes = (app) => ([
   {
-    path: '/',
-    dynamicComp: dynamic({
-      app,
-      models: () => [
-        import('./models/login'),
-      ],
-      component: () => import('./routes/login'),
-    })
-  },
-  {
     path: '/error',
     dynamicComp: dynamic({
       app,
@@ -29,7 +19,17 @@ const routes = (app) => ([
       ],
       component: () => import('./routes/users'),
     })
-  }
+  },
+  {
+    path: '/',
+    dynamicComp: dynamic({
+      app,
+      models: () => [
+        import('./models/login'),
+      ],
+      component: () => import('./routes/login'),
+    })
+  },
 ])
 
 function RouterConfig({ history, app }) {
