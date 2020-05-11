@@ -9,7 +9,7 @@ function ErrorPage(props) {
     <div className={styles.page}>
       <Header />
       <div className={styles.messageContainer}>
-        {props.location.state.data === 'fromUsers' ?
+        {props.location.state && props.location.state.data === 'fromUsers' ?
           <div className={styles.message}> Token expired, Please login again!</div>
           :
           <div className={styles.message}>Incorrect user details, Please try again!</div>}
