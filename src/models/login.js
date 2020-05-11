@@ -22,8 +22,11 @@ export default {
         localStorage.setItem('token', data.token);
         yield put(routerRedux.replace({ pathname: '/users' }))
       } else {
-        yield put(routerRedux.replace({ pathname: '/error',  state: 'fromLogin' }))
+        yield put(routerRedux.replace({ pathname: '/error', state: 'fromLogin' }))
       }
+    },
+    * catchErr(_, { put }) {
+      yield put(routerRedux.replace({ pathname: '/error', state: { data: 'fromUsers' } }))
     }
   },
 

@@ -1,27 +1,3 @@
-.overlayLoader {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background-color: #fff;
-  z-index: 1000;
-}
-
-.overlayMiddle {
-  height: 100%;
-  display: table;
-  width: 100%;
-  text-align: center;
-}
- .overlayContent {
-  height: 80%;
-  margin: 100px 10% 10px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
-
 .usrContainer {
   width: 400px;
   background: #fff;

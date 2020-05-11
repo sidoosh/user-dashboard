@@ -7,7 +7,7 @@ const createBrowserHistory = require('history').createBrowserHistory;
 const app = dva({
     history: createBrowserHistory(),
     onError(e, dispatch) {
-        dispatch({ type: 'users/catchErr', payload: e })
+        dispatch({ type: 'login/catchErr', payload: e })
     },
 });
 

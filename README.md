@@ -1,6 +1,6 @@
 ## User Dashboard
 
-You can checkout application here(https://sidoosh.github.io/user-dashboard)
+You can checkout application here https://hre3l.csb.app/ (Temporarily deployed on codesandbox)
 
 Displays registered users information
 
@@ -16,3 +16,4 @@ Displays registered users information
 
 - SignUp page redirection in case of error
 - Add Pagination for large users list and query data accordingly (Performance improvements)
+- Complete firebase deployments with domain integration

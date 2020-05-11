@@ -3,6 +3,7 @@ import { connect } from 'dva';
 import styles from './UsersPage.css';
 import User from '../../components/user';
 import Header from '../../components/header';
+import Loader from '../../components/loader';
 
 const getList = (list) => {
   let count = 0;
@@ -32,7 +33,6 @@ const getList = (list) => {
   return items;
 }
 function UsersPage(props) {
-
   return (
     <div className={styles.grid}>
       <Header />
@@ -41,8 +41,10 @@ function UsersPage(props) {
         <button className={`${styles.button} ${props.applyFilter ? '' : styles.filter}`} onClick={props.handleFilter}>Apply Filter</button>
       </div>
       <div className={styles.usersContainer}>
-        {props.list.length > 0 &&
+        {props.list.length > 0 ?
           getList(props.list)
+          :
+          <Loader />
         }
       </div>
     </div>

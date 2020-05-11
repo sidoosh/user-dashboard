@@ -1,5 +1,4 @@
 import { queryUsers } from '../services/users';
-import { routerRedux } from 'dva/router';
 
 export default {
 
@@ -26,9 +25,6 @@ export default {
       if (data.length > 0) {
         yield put({ type: 'updateState', payload: data });
       }
-    },
-    * catchErr(_, { put }) {
-      yield put(routerRedux.replace({ pathname: '/error', state: { data: 'fromUsers' } }))
     }
   },
 
