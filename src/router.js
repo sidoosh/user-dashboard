@@ -1,10 +1,10 @@
 import React from 'react';
-import { Router, Route, Switch, Redirect } from 'dva/router';
+import { Router, Route, Switch } from 'dva/router';
 import dynamic from 'dva/dynamic';
 
 const routes = (app) => ([
   {
-    path: '/login',
+    path: '/',
     dynamicComp: dynamic({
       app,
       models: () => [
@@ -45,7 +45,7 @@ function RouterConfig({ history, app }) {
             component={component}
           />
         ))}
-        <Redirect from='/' to='/login' />
+        {/* <Redirect from='/' to='/login' /> */}
       </Switch>
     </Router>
   );
