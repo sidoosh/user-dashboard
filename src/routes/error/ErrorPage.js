@@ -6,13 +6,13 @@ import Header from '../../components/header';
 function ErrorPage(props) {
 
   return (
-    <div className={styles.normal}>
+    <div className={styles.page}>
       <Header />
-      <div>
+      <div className={styles.messageContainer}>
         {props.location.state.data === 'fromUsers' ?
-          <div> Token expired, Please login again!</div>
+          <div className={styles.message}> Token expired, Please login again!</div>
           :
-          <div>Incorrect user details, Please try again!</div>}
+          <div className={styles.message}>Incorrect user details, Please try again!</div>}
       </div>
     </div>
   );

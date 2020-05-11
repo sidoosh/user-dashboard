@@ -2,6 +2,9 @@
   max-height: 84px;
   display: flex;
   justify-content: center;
+  padding: 15px;
+  background: #f3f3f3;
+  width: 100%;
 }
 .headerLogo{
   max-width: 160px;

@@ -1,29 +1,64 @@
+.title {
+  font-size: 42px;
+  font-weight: 500;
+  color: #f7941d;
+  margin: 20px 0;
+}
 
-.normal {
-    font-family: Georgia, sans-serif;
-    margin-top: 3em;
-    text-align: center;
+.grid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to top, #e3f6ea, #04ba5f 67%);
+  height: 100vh;
+}
+
+.topHeader {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  background: #404040;
+  border-top: 1px solid #c9c9c9;
+}
+
+.button {
+  background: white;
+  border-color: #404040;
+  color: #f7941d;
+  padding: 15px 50px;
+  font-size: 20px;
+}
+
+.filter {
+  background: #f7941d;
+  border-color: #f7941d;
+  color: white;
+}
+
+.usersContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.listContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .topHeader {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 25px;
   }
 
-  .title {
-    font-size: 2.5rem;
-    font-weight: normal;
-    letter-spacing: -1px;
+  .listContainer {
+    flex-direction: column;
   }
-
-  /* .welcome {
-    height: 328px;
-    background: url(../assets/yay.jpg) no-repeat center 0;
-    background-size: 388px 328px;
-  } */
-
-  .list {
-    font-size: 1.2em;
-    margin-top: 1.8em;
-    list-style: none;
-    line-height: 1.5em;
-  }
-
-  .list code {
-    background: #f7f7f7;
-  }
+}
